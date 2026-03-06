@@ -121,9 +121,8 @@ const EmergencyButtons = ({ onSelect, activeCategory }: EmergencyButtonsProps) =
             transition={{ delay: i * 0.05, duration: 0.4 }}
             onClick={() => onSelect(cat)}
             className={`emergency-btn ${cat.bgColor} ${cat.borderColor} ${
-              activeCategory === cat.id ? "ring-2 ring-offset-2 ring-offset-background" : ""
+              activeCategory === cat.id ? "ring-2 ring-primary ring-offset-2 ring-offset-background" : ""
             }`}
-            style={activeCategory === cat.id ? { ringColor: "currentColor" } : {}}
           >
             <div className={cat.color}>{cat.icon}</div>
             <span className={`font-semibold text-sm sm:text-base ${cat.color}`}>{cat.label}</span>
