@@ -114,7 +114,7 @@ const EmergencyMap = ({ userLocation, activeCategory, places, loading, searchedL
           ))}
         </div>
       )}
-      {!loading && activeCategory && places.length === 0 && (
+      {!loading && activeCategory && (places?.length ?? 0) === 0 && (
         <div className="mt-6 text-center text-muted-foreground">
           <p>No {activeCategory.label.toLowerCase()} services found nearby. Try searching a different location.</p>
         </div>
