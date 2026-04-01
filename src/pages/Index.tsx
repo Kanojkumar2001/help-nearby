@@ -100,6 +100,7 @@ const Index = () => {
       <EmergencyContacts />
       <ReportIncident />
       <Footer />
+      <SOSButton />
     </div>
   );
 };
