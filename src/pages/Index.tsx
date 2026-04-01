@@ -6,6 +6,8 @@ import EmergencyMap from "@/components/EmergencyMap";
 import EmergencyContacts from "@/components/EmergencyContacts";
 import ReportIncident from "@/components/ReportIncident";
 import Footer from "@/components/Footer";
+import SOSButton from "@/components/SOSButton";
+
 import LocationSearch from "@/components/LocationSearch";
 import { fetchNearbyPlaces, NearbyPlace } from "@/lib/overpass";
 
